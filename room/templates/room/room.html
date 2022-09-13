@@ -54,7 +54,7 @@
 
         if (data.message) {
             let div;
-            if("{{request.user.username}}" == userName)
+            if("{{request.user.username}}" == data.username )
                 div = '<div class="flex justify-end" >'+ data.message+ '</div>';
             else 
                 div = '<div class="flex justify-start"><b>' + data.username + '</b>: ' + data.message + '</div>'
