@@ -4,8 +4,8 @@ import logging
 import traceback
 from django.conf import settings
 
-#this is your "password/ENCRYPT_KEY". keep it in settings.py file
-key = Fernet.generate_key() 
+#the "password/ENCRYPT_KEY" is in settings.py file
+# key = Fernet.generate_key() 
 
 def encrypt(txt):
     try:
