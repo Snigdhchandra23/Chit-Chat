@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-!79n+mp+d)1-=z7w5ee9f5*74mhqbene^c*89j@(1gsot5&t@o'
+SECRET_KEY = '?#?#?#?#?#?#?#?#?#? HIDDEN #?#?#?#?#?#??#?#?#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/rooms/'
 LOGIN_URL = '/login/'
-
+ 
+# Fernet encryption key
 ENCRYPT_KEY = b'iDJpljxUBBsacCZ50GpSBff6Xem0R-giqXXnBFGJ2Rs='
 
 # Application definition
@@ -58,20 +59,6 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 
-
-
-# SOCIALACCOUNT_PROVIDERS = {
-#     'google': {
-#         # For each OAuth based provider, either add a ``SocialApp``
-#         # (``socialaccount`` app) containing the required client
-#         # credentials, or list them here:
-#         'APP': {
-#             'client_id': '716089810730-fpc57ucuqhkcipjehom2upkttlif0jjb.apps.googleusercontent.com',
-#             'secret': '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',
-#             'key': ''
-#         }
-#     }
-# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
